@@ -4,7 +4,6 @@ import styled from "styled-components";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import { Link } from "react-router-dom";
-import Loader from "./Loader";
 import { APIKey } from "./APIUtils";
 
 function Vaggies() {
@@ -46,7 +45,6 @@ function Vaggies() {
         >
           {loading ? (
             <div style={{}}>
-              <Loader />
             </div>
           ) : (
             veggies.map((recipes, index) => {

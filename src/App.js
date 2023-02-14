@@ -3,11 +3,9 @@ import Category from "./components/Category";
 import { BrowserRouter } from "react-router-dom";
 import Search from "./components/Search";
 import Searched from "./pages/Searched";
-import Recipe from "./pages/Recipe";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { GiKnifeFork } from "react-icons/gi";
-import Loader from "./components/Loader";
 function App() {
   return (
     <div className="App">
@@ -17,7 +15,6 @@ function App() {
           <Logo to={"/"}>Diliciousss</Logo>
         </Nav>
         <Searched />
-        {/* <Recipe /> */}
         <Search />
         <Category />
         <Pages />
